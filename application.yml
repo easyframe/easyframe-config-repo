@@ -1,0 +1,40 @@
+# Default
+easyframe:
+  env: default
+  server-name: easyframe-default
+testEnc: '{cipher}76f6af9f8a8973946e2092c26f5ac650764f146f35f32303cacaafe48c2fc1f7'
+
+# [dev] Environment:
+---
+spring:
+  profiles: dev
+easyframe:
+  env: dev
+  server-name: easyframe-dev
+
+# [test] Environment
+---
+spring:
+  profiles: test
+easyframe:
+  env: test
+  server-name: easyframe-test
+logging:
+  level:
+  org.springframework.cloud.commons.util.InetUtils: TRACE
+
+# [staging] Environment
+---
+spring:
+  profiles: staging
+easyframe:
+  env: staging
+  server-name: easyframe-staging
+
+# [prod] Environment
+---
+spring:
+  profiles: prod
+easyframe:
+  env: prod
+  server-name: easyframe-prod
