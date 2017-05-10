@@ -2,7 +2,6 @@
 easyframe:
   env: default
   server-name: easyframe-default
-testEnc: '{cipher}76f6af9f8a8973946e2092c26f5ac650764f146f35f32303cacaafe48c2fc1f7'
 
 # [dev] Environment:
 ---
